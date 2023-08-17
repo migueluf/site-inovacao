@@ -1,14 +1,13 @@
-import { Stack, Image } from "@chakra-ui/react"
+import { Stack, Image, Box } from "@chakra-ui/react"
 import { AnyMxRecord } from "dns"
 
-export const Logo = ({ image }: any) =>{
+export const Logo = ({image}: any) =>{
     return(
-        <Stack>
+        <Box>
             <Image 
-                boxSize='50px'
-                objectFit='cover'
-                src={`${image}`}
-            />            
-        </Stack>
+            boxSize='200px'
+            objectFit='contain'
+            src= {`${image}`} />            
+        </Box>
     )
 }
